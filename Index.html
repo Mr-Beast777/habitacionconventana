@@ -4,10 +4,11 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
+      <a-assets>        
         <img id="suelo" src="suelos.jpg">
         <img id="paredes" src="paredes.jpg">
         <img id="vigas" src="vigas.jpg">
+        <img id="campo" src="campo.jpg"
       </a-assets>
       <a-entity>
          <a-box position="0 0.1 0" depth="3" height="0.2" width="3" rotation="0 0 0" src="#suelo"></a-box>
@@ -20,7 +21,7 @@
          <a-box position="0 3.2 0" depth="3" height="0.2" width="3" rotation="0 0 0" src="#vigas" ></a-box>
       </a-entity>
       <a-light position="3 3 3" type="ambient" rotation="0 0 0" color:#FFFFFF"></a-light>
-      <a-sky position="0 1 0"color="#ECECEC"></a-sky>
+      <a-sky position="0 1 0"color="#ECECEC" src="#campo"></a-sky>
       <a-entity id="rig" position="-3 1 3">
         <a-camera id="camera"></a-camera>
       </a-entity>
